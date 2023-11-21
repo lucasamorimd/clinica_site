@@ -8,6 +8,9 @@ class Request {
     public static function getUrl() {
         $url = filter_input(INPUT_GET, 'request');
         $url = str_replace(Config::BASE_DIR, '', $url);
+        if (substr($url, 0, 1) === '/'){
+            return $url;
+        }
         return '/'.$url;
     }
 

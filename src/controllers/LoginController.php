@@ -125,7 +125,6 @@ class LoginController extends Controller
     //Mètodo que renderiza a página inicial sem usuário logado
     public function unsigned()
     {
-
         //requisição dos dados dos médicos cadastrados e que não estão deletados
         $lista_medicos = Medico::select()->where('is_deleted', 0)->execute();
 
