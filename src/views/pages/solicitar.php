@@ -25,7 +25,7 @@ exit;*/ ?>
                         <div class="swiper-wrapper align-items-center">
                             <?php foreach ($dados_solicitar_servico['fotos_slideshow'] as $foto) : ?>
                                 <div class="swiper-slide">
-                                    <img src="http://localhost:8000/servicos/imagens/<?= $nome_servico ?>/<?= $dados_solicitar_servico['servico']['nome_servico'] ?>/<?= $foto['nome_foto'] ?>" alt="">
+                                    <img src="<?= $baseApi?>/servicos/imagens/<?= $nome_servico ?>/<?= $dados_solicitar_servico['servico']['nome_servico'] ?>/<?= $foto['nome_foto'] ?>" alt="">
                                 </div>
                             <?php endforeach; ?>
                         </div>

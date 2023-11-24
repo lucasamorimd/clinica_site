@@ -24,7 +24,7 @@ die();*/
                         <article class="entry">
 
                             <div class="entry-img">
-                                <img src="http://localhost:8000/servicos/imagens/<?= $nome_servico ?>/<?= $servico['nome_servico'] ?>/<?= $servico['foto_principal'] ?>" alt="" class="img-fluid">
+                                <img src="<?= $baseApi?>/servicos/imagens/<?= $nome_servico ?>/<?= $servico['nome_servico'] ?>/<?= $servico['foto_principal'] ?>" alt="" class="img-fluid">
                             </div>
 
                             <h2 class="entry-title">

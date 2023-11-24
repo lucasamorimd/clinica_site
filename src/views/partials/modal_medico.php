@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-6">
         <div class="card">
-            <img class="card-img-top" src="http://localhost:8000/medicos/imagens/<?= md5($modalAgendamento['id_medico'] . '_' . $modalAgendamento['crm']) ?>/<?= $modalAgendamento['foto_medico'] ?>" alt="...">
+            <img class="card-img-top" src="<?=$baseApi?>/medicos/imagens/<?= md5($modalAgendamento['id_medico'] . '_' . $modalAgendamento['crm']) ?>/<?= $modalAgendamento['foto_medico'] ?>" alt="...">
         </div>
     </div>
     <div class="col-md-6">

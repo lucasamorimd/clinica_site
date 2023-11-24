@@ -73,7 +73,7 @@ class AgendamentosController extends Controller
                     'nome_atendimento' => $params['nome_atendimento'],
                     'data_atendimento' => $data_selecionada->format('Y-m-d'),
                     'hora_atendimento' => $params['hora_atendimento'],
-                    'preco_servico' => $params['preco']
+                    'preco_servico' => (float) $params['preco']
 
                 ]
             )->execute();

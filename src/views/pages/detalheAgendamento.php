@@ -89,7 +89,7 @@
                             </div>
                             <div class="col-md-6 mx-auto" style="width: 200px;">
                                 <div class="card" style="width: 18rem;">
-                                    <img src="http://localhost:8000/medicos/imagens/<?= md5($dados_medico['id_medico'] . '_' . $dados_medico['crm']) ?>/<?= $dados_medico['foto_medico'] ?>" class="card-img-top" alt="...">
+                                    <img src="<?= $baseApi?>/medicos/imagens/<?= md5($dados_medico['id_medico'] . '_' . $dados_medico['crm']) ?>/<?= $dados_medico['foto_medico'] ?>" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title text-center"><?= $dados_medico['nome_medico'] ?></h5>
                                     </div>

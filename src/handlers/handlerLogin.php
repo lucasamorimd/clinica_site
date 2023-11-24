@@ -25,7 +25,6 @@ class handlerLogin
                 $loggedUser->cidade = $data['cidade'];
                 $loggedUser->estado = $data['estado'];
                 $loggedUser->login = $data['login'];
-                $loggedUser->perfil = $data['perfil'];
                 $loggedUser->foto = $data['foto'];
                 $loggedUser->sexo = $data['sexo'];
                 $loggedUser->token = $data['token'];

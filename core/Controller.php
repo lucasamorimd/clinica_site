@@ -23,6 +23,7 @@ class Controller {
             extract($viewData);
             $render = fn($vN, $vD = []) => $this->renderPartial($vN, $vD);
             $base = $this->getBaseUrl();
+            $baseApi = Config::BASE_API;
             require '../src/views/'.$folder.'/'.$viewName.'.php';
         }
     }
